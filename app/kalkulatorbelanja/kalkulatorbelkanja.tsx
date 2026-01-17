@@ -32,6 +32,13 @@ export default function KalkulatorBelanja  (){
 
     return(
 
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center p-6">
+      <div className="max-w-5xl w-full bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+        
+        
+
+        {/* BAGIAN KANAN: Form Input */}
+
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
       <Card className="bg-white p-6 rounded-xl shadow-md w-full max-w-sm border border-gray-200 mt-15">
         <CardHeader>
@@ -78,6 +85,28 @@ export default function KalkulatorBelanja  (){
 
 
         </div>
+
+
+        {/* BAGIAN KIRI: Keterangan/Informasi */}
+        <div className="w-full md:w-1/2 bg-blue-600 p-8 text-white flex flex-col justify-center">
+          <h2 className="text-3xl font-bold mb-4">Hubungi Kami</h2>
+          <p className="text-blue-100 mb-6">
+            Silakan isi formulir di samping untuk memberikan masukan atau pertanyaan kepada tim kami. Kami akan merespon dalam waktu 24 jam.
+          </p>
+          <div className="space-y-4">
+            <div className="flex items-center space-x-3">
+              <span>📍</span>
+              <p>Jl. Sudirman No. 123, Jakarta</p>
+            </div>
+            <div className="flex items-center space-x-3">
+              <span>📧</span>
+              <p>support@perusahaan.com</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
         
 

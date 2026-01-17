@@ -16,13 +16,12 @@ const Navbar = () => {
           <div className="hidden md:flex space-x-8 items-center">
             <Link href="/kalkulatorbelanja" className="text-gray-700 hover:text-blue-600 transition">Kalkulator belanja</Link>
             <Link href="/caridata" className="text-gray-700 hover:text-blue-600 transition">caridata</Link>
-            <Link href="/transformation" className="text-gray-700 hover:text-blue-600 transition">transformation</Link>
+            <Link href="/transformation" className="text-gray-700 hover:text-blue-600 transition">transformasi</Link>
             <Link href="/inputvalidation" className="text-gray-700 hover:text-blue-600 transition">inputvalidation</Link>
             <Link href="/dekomposisi" className="text-gray-700 hover:text-blue-600 transition">dekomposisi</Link>
-            <Link href="/services" className="text-gray-700 hover:text-blue-600 transition">6</Link>
-            <Link href="/" className="text-gray-700 hover:text-blue-600 transition">7</Link>
-            <Link href="/about" className="text-gray-700 hover:text-blue-600 transition">About</Link>
-            <Link href="/services" className="text-gray-700 hover:text-blue-600 transition">Services</Link>
+            <Link href="/contactpage" className="text-gray-700 hover:text-blue-600 transition">contactpage</Link>
+            <Link href="/filtering" className="text-gray-700 hover:text-blue-600 transition">filter</Link>
+            
           </div>
         </div>
       </div>
