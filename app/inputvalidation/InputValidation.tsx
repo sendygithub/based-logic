@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import CodeViewerInputValidation from "./codeviewerinputvalidation";
 
 export function InputValidation() {
   // 1. State untuk menampung input password
@@ -84,21 +85,8 @@ export function InputValidation() {
 
 
     {/* BAGIAN KIRI: Keterangan/Informasi */}
-        <div className="w-full md:w-1/2 bg-blue-600 p-8 text-white flex flex-col justify-center">
-          <h2 className="text-3xl font-bold mb-4">Hubungi Kami</h2>
-          <p className="text-blue-100 mb-6">
-            Silakan isi formulir di samping untuk memberikan masukan atau pertanyaan kepada tim kami. Kami akan merespon dalam waktu 24 jam.
-          </p>
-          <div className="space-y-4">
-            <div className="flex items-center space-x-3">
-              <span>📍</span>
-              <p>Jl. Sudirman No. 123, Jakarta</p>
-            </div>
-            <div className="flex items-center space-x-3">
-              <span>📧</span>
-              <p>support@perusahaan.com</p>
-            </div>
-          </div>
+        <div className="flex flex-col justify-center">
+         <CodeViewerInputValidation />
         </div>
 
       </div>

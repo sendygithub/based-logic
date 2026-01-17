@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Copy, ArrowUp, ArrowDown } from "lucide-react"
 import { toast } from "sonner"
 
-export function CodeViewer() {
+export function CodeViewerKalkulatorBelanja() {
   // 1. Buat Ref untuk menargetkan kontainer scroll
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -124,7 +124,7 @@ export default function PencariAngka() {
   )
 }
 
-export default CodeViewer
+export default CodeViewerKalkulatorBelanja
 
 
 

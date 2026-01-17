@@ -1,5 +1,6 @@
 "use client"; 
 import React, { useState } from "react";
+import CodeViewer from "./codeview";
 
 export default function PencariAngka() {
   // 1. Sekumpulan data (Array)
@@ -37,8 +38,8 @@ export default function PencariAngka() {
 
   return (
 
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-6">
-      <div className="max-w-5xl w-full bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+    <div className=" bg-gray-50 flex items-center justify-center p-6">
+      <div className="max-w-5xl bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row">
         
 
 
@@ -92,21 +93,9 @@ export default function PencariAngka() {
 
 
     {/* BAGIAN KIRI: Keterangan/Informasi */}
-        <div className="w-full md:w-1/2 bg-blue-600 p-8 text-white flex flex-col justify-center">
-          <h2 className="text-3xl font-bold mb-4">Hubungi Kami</h2>
-          <p className="text-blue-100 mb-6">
-            Silakan isi formulir di samping untuk memberikan masukan atau pertanyaan kepada tim kami. Kami akan merespon dalam waktu 24 jam.
-          </p>
-          <div className="space-y-4">
-            <div className="flex items-center space-x-3">
-              <span>📍</span>
-              <p>Jl. Sudirman No. 123, Jakarta</p>
-            </div>
-            <div className="flex items-center space-x-3">
-              <span>📧</span>
-              <p>support@perusahaan.com</p>
-            </div>
-          </div>
+        <div className="  text-white flex flex-col justify-center">
+          <CodeViewer/>
+          
         </div>
 
 

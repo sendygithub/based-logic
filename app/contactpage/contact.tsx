@@ -1,4 +1,5 @@
 import React from 'react';
+import CodeViewerContact from './codeviewercontact';
 
 const ContactPage = () => {
   return (
@@ -44,21 +45,10 @@ const ContactPage = () => {
         </div>
 
         {/* BAGIAN KIRI: Keterangan/Informasi */}
-        <div className="w-full md:w-1/2 bg-blue-600 p-8 text-white flex flex-col justify-center">
-          <h2 className="text-3xl font-bold mb-4">Hubungi Kami</h2>
-          <p className="text-blue-100 mb-6">
-            Silakan isi formulir di samping untuk memberikan masukan atau pertanyaan kepada tim kami. Kami akan merespon dalam waktu 24 jam.
-          </p>
-          <div className="space-y-4">
-            <div className="flex items-center space-x-3">
-              <span>📍</span>
-              <p>Jl. Sudirman No. 123, Jakarta</p>
-            </div>
-            <div className="flex items-center space-x-3">
-              <span>📧</span>
-              <p>support@perusahaan.com</p>
-            </div>
-          </div>
+        <div className="w-full  text-white flex flex-col justify-center">
+          <CodeViewerContact />
+            
+          
         </div>
 
       </div>
