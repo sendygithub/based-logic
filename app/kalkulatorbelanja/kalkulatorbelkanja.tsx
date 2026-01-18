@@ -49,8 +49,6 @@ export default function KalkulatorBelanja  (){
         </CardHeader>
 
 
-
-
         <CardContent className="space-y-6">
             <Input
             className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all text-center text-black"
@@ -64,6 +62,7 @@ export default function KalkulatorBelanja  (){
           <div className="space-y-2">
             <h3 className="bg-blue-100 text-blue-700 px-3 py-1 rounded-md text-sm border border-blue-200">Daftar Item:</h3>
             <ul className="bg-blue-100 text-blue-700 px-3 py-1 rounded-md text-sm border border-blue-200">
+
               {daftarHarga.map((harga, index) => (
                 <li key={index} className="py-1 flex justify-between">
                   <span>Barang {index + 1}</span>

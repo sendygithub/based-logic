@@ -9,7 +9,8 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0 font-bold text-2xl text-blue-600">
-            Belajar Javascript
+            <Link href="/" className="flex-shrink-0 font-bold text-2xl text-blue-600">Belajar Javascript</Link>
+            
           </div>
 
           {/* Menu Desktop */}

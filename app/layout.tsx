@@ -28,7 +28,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navlink/>
-        {children}
+        <main className="pt-20 px-4">
+          {children}
+        </main>
+        
       </body>
     </html>
   );
