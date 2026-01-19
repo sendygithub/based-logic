@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { Bubbles } from "lucide-react";
 
 
 export default function Home() {
@@ -10,6 +11,11 @@ export default function Home() {
       
       <Button>
         <Link href="/product">Tambah Product</Link>
+      </Button>
+      <Button
+        variant="outline"
+      >
+        <Link href="/artikel"><Bubbles size={20} /></Link>
       </Button>
 
 
