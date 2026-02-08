@@ -95,7 +95,7 @@ export default async function MoviesPage() {
               </div>
 
               {/* GENRES */}
-              {movie.genres.length > 0 && (
+              {movie.genres && movie.genres.length > 0 && (
                 <div className="flex flex-wrap gap-1 pt-2">
                   {movie.genres.slice(0, 3).map((genres) => (
                     <span
