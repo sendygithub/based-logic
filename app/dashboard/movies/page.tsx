@@ -29,6 +29,7 @@ async function getMovies(): Promise<Movie[]> {
   const raw = await res.json();
 
   // NORMALISASI DATA
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   return raw.map((m: any) => ({
     ...m,
     genres: m.genres ?? [],
