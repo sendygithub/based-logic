@@ -53,15 +53,7 @@ const data = {
           title: "Movies App",
           url: "/dashboard/movies",
         },
-        {
-          title: "Twitter Following Viewer",
-          url: "/dashboard/twitter",
-          isActive: true,
-        },
-        {
-          title: "tokopedia",
-          url: "/dashboard/tokopedia",
-        },
+        
         {
           title: "Product Page",
           url: "/dashboard/productpage",
@@ -74,60 +66,31 @@ const data = {
           title: "usestate",
           url: "/dashboard/usestate",
         },
-        {
-          title: "Configuring",
-          url: "/dashboard/configuring",
-        },
-        {
-          title: "Testing",
-          url: "#",
-        },
-        {
-          title: "Authentication",
-          url: "#",
-        },
-        {
-          title: "Deploying",
-          url: "#",
-        },
-        {
-          title: "Upgrading",
-          url: "#",
-        },
-        {
-          title: "Examples",
-          url: "#",
-        },
+        
+        
       ],
     },
     {
-      title: "API Reference",
+      title: "Zustand State Management",
       url: "#",
       items: [
         {
-          title: "Components",
-          url: "#",
+          title: "zustand",
+          url: "/dashboard/zustand",
         },
         {
-          title: "File Conventions",
-          url: "#",
+          title: "checkout",
+          url: "/dashboard/checkout",
         },
         {
-          title: "Functions",
-          url: "#",
+          title: "shop",
+          url: "/dashboard/shop",
         },
         {
-          title: "next.config.js Options",
-          url: "#",
+          title: "productpage",
+          url: "/dashboard/product",
         },
-        {
-          title: "CLI",
-          url: "#",
-        },
-        {
-          title: "Edge Runtime",
-          url: "#",
-        },
+        
       ],
     },
     {
