@@ -86,7 +86,7 @@ export default function MoodMochiPage() {
         </div>
 
         <p className="text-sm md:text-base text-gray-600 mt-12 opacity-80">
-          Klik tombol di atas untuk mengubah mood Mochi! 🐾
+          Klik tombol di atas untuk mengubah mood Mochii! 🐾
         </p>
       </div>
     </main>
