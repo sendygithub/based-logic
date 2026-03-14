@@ -120,6 +120,38 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased selection:bg-primary/30 selection:text-primary;
+    overflow-x: hidden;
   }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-background/60 backdrop-blur-xl border border-border/50 shadow-sm dark:shadow-none;
+  }
+  
+  .glass-card {
+    @apply bg-card/60 backdrop-blur-md border border-border hover:border-primary/50 transition-colors duration-500 shadow-xl;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-br from-foreground to-muted-foreground bg-clip-text text-transparent;
+  }
+}
+
+/* Lenis Smooth Scroll Required Styles */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
 }

@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navlink from "@/components/navlink";
+import { SmoothScroll } from "@/components/animations/smooth-scroll";
+import { ThemeProvider } from "@/components/theme-provider";
+import { CustomCursor } from "@/components/animations/cursor";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -13,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Logika java script",
-  description: "One stop lear javascript",
+  title: "Premium JS Algorithms",
+  description: "Learn JavaScript algorithms with an Awwwards-level experience.",
 };
 
 export default function RootLayout({
@@ -23,15 +26,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
       >
-       
-        <main >
-          {children}
-        </main>
-        
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <SmoothScroll>
+            <CustomCursor />
+            <main>
+              {children}
+            </main>
+          </SmoothScroll>
+        </ThemeProvider>
       </body>
     </html>
   );
